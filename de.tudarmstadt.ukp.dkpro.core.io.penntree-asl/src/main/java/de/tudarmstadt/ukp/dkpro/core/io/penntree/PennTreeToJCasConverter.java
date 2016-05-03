@@ -123,8 +123,6 @@ public class PennTreeToJCasConverter
                 parent.setConstituentType(ROOT);
                 parent.setChildren(createFSArray(aJCas, new Constituent[] { constituent }));
                 generatedParent = true;
-                
-                constituent.setParent(parent);
             }
             // Case 1: unlabeled root node: ( (S...
             // Case 3: labeled root node:   (ROOT (S...
@@ -248,8 +246,6 @@ public class PennTreeToJCasConverter
                 parent.setConstituentType(ROOT);
                 parent.setChildren(createFSArray(aJCas, new Constituent[] { constituent }));
                 generatedParent = true;
-                
-                constituent.setParent(parent);
             }
             // Case 1: unlabeled root node: ( (S...
             // Case 3: labeled root node:   (ROOT (S...
